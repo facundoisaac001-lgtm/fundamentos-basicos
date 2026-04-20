@@ -42,6 +42,7 @@ fun esImpar(numero: Int): Boolean {
 }
 
 fun valorAbsoluto(numero: Int): Int {
+    
     TODO("Retornar el valor absoluto del numero")
 }
 
