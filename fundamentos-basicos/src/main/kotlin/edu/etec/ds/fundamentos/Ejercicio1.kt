@@ -29,16 +29,16 @@ fun esMenorQue(a: Int, b: Int): Boolean {
 }
 
 fun sonIguales(a: Int, b: Int): Boolean {
-    TODO("Retornar true si a y b son iguales")
+    return  a == b
 
 }
 
 fun esPar(numero: Int): Boolean {
-    TODO("Retornar true si el numero es par")
+return numero % 2 == 0
 }
 
 fun esImpar(numero: Int): Boolean {
-    TODO("Retornar true si el numero es impar")
+    return numero % 2 != 0
 }
 
 fun valorAbsoluto(numero: Int): Int {
