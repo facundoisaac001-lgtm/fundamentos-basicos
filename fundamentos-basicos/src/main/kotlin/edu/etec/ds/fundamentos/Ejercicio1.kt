@@ -1,35 +1,36 @@
 package edu.etec.ds.fundamentos
 
 fun suma(a: Int, b: Int): Int {
-    TODO("Implementar suma de dos enteros")
+   return a + b
 }
 
 fun resta(a: Int, b: Int): Int {
-    TODO("Implementar resta de dos enteros")
+    return a - b
 }
 
 fun multiplicacion(a: Int, b: Int): Int {
-    TODO("Implementar multiplicacion de dos enteros")
+    return a * b
 }
 
 fun division(a: Int, b: Int): Int {
-    TODO("Implementar division entera de dos enteros")
+    return a / b
 }
 
 fun modulo(a: Int, b: Int): Int {
-    TODO("Implementar modulo de dos enteros")
+   return a % b
 }
 
 fun esMayorQue(a: Int, b: Int): Boolean {
-    TODO("Retornar true si a es mayor que b")
+    return b > a
 }
 
 fun esMenorQue(a: Int, b: Int): Boolean {
-    TODO("Retornar true si a es menor que b")
+    return a > b
 }
 
 fun sonIguales(a: Int, b: Int): Boolean {
     TODO("Retornar true si a y b son iguales")
+
 }
 
 fun esPar(numero: Int): Boolean {
