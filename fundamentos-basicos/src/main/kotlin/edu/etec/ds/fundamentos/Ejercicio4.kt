@@ -1,21 +1,42 @@
 package edu.etec.ds.fundamentos
 
 fun evaluarPositivo(numero: Int): String {
-    TODO("Retornar \"Positivo\" si numero > 0, sino \"No positivo\"")
+    return when {
+        numero > 0 -> "Positivo"
+        else -> "No positivo"
+    }
 }
 
 fun clasificarNumero(numero: Int): String {
-    TODO("Clasificar: Mayor a 10, Menor a 10, o Igual a 10")
+    return when {
+        numero > 10 -> "Mayor a 10"
+        numero < 10 -> "Menor a 10"
+        else -> "Igual a 10"
+    }
 }
 
 fun evaluarEdad(edad: Int): String {
-    TODO("Menor de edad: < 18, Adulto: 18-65, Adulto mayor: > 65")
+    return when {
+        edad < 18 -> "Menor edad"
+        edad in 18 .. 65 -> "Adulto"
+        else -> "Adulto mayor"
+    }
 }
 
 fun obtenerDescuento(monto: Double): Double {
-    TODO("Retornar descuento: 10% si monto > 100, 20% si > 150, 30% si > 200, sino 0%")
-}
-
+        return when {
+            monto >= 200 -> 30.0
+            monto >= 150 -> 20.0
+            monto > 100 -> 10.0
+            else -> 0.0
+        }
+    }
 fun calcular(operador: Char, a: Int, b: Int): Double {
-    TODO("Realizar operacion: + - * /. Retornar 0.0 si division por cero u operador invalido")
+    return when (operador) {
+        '+' -> (a + b).toDouble()
+        '-' -> (a - b).toDouble()
+        '*' -> (a * b).toDouble()
+        '/' -> if (b != 0) a.toDouble() / b else 0.0
+        else -> 0.0
+    }
 }
