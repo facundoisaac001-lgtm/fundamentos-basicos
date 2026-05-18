@@ -1,7 +1,9 @@
 package edu.etec.ds.fundamentos
 import kotlin.math.abs
+import kotlin.math.max
+import kotlin.math.min
 fun suma(a: Int, b: Int): Int {
-   return a + b
+    return a + b
 }
 
 fun resta(a: Int, b: Int): Int {
@@ -17,15 +19,15 @@ fun division(a: Int, b: Int): Int {
 }
 
 fun modulo(a: Int, b: Int): Int {
-   return a % b
+    return a % b
 }
 
 fun esMayorQue(a: Int, b: Int): Boolean {
-    return b > a
+    return a > b
 }
 
 fun esMenorQue(a: Int, b: Int): Boolean {
-    return a > b
+    return b > a
 }
 
 fun sonIguales(a: Int, b: Int): Boolean {
@@ -34,7 +36,7 @@ fun sonIguales(a: Int, b: Int): Boolean {
 }
 
 fun esPar(numero: Int): Boolean {
-return numero % 2 == 0
+    return numero % 2 == 0
 }
 
 fun esImpar(numero: Int): Boolean {
@@ -46,9 +48,9 @@ fun valorAbsoluto(numero: Int): Int {
 }
 
 fun maximo(a: Int, b: Int): Int {
-    return maximo(a,b)
+    return max(a,b)
 }
 
 fun minimo(a: Int, b: Int): Int {
-    return minimo(a,b)
+    return min(a,b)
 }

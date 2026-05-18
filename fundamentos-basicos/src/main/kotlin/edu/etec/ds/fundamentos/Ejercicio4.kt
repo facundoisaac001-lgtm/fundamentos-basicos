@@ -17,20 +17,20 @@ fun clasificarNumero(numero: Int): String {
 
 fun evaluarEdad(edad: Int): String {
     return when {
-        edad < 18 -> "Menor edad"
+        edad < 18 -> "Menor de edad"
         edad in 18 .. 65 -> "Adulto"
         else -> "Adulto mayor"
     }
 }
 
 fun obtenerDescuento(monto: Double): Double {
-        return when {
-            monto >= 200 -> 30.0
-            monto >= 150 -> 20.0
-            monto > 100 -> 10.0
-            else -> 0.0
-        }
+    return when {
+        monto >= 200 -> 30.0
+        monto >= 150 -> 20.0
+        monto > 100 -> 10.0
+        else -> 0.0
     }
+}
 fun calcular(operador: Char, a: Int, b: Int): Double {
     return when (operador) {
         '+' -> (a + b).toDouble()
